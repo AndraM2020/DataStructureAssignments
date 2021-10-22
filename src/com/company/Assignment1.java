@@ -32,7 +32,7 @@ public class Assignment1 {
             if (randomValues.get(i).charAt(0) == 'C')
                 startsWithCCount++;
         {
-            System.out.println("There are " + startsWithCCount + " value(-s) starting with 'C'. ");
+            System.out.println("There are " + startsWithCCount + " value(s) starting with 'C'. ");
         }
     }
 
@@ -42,7 +42,7 @@ public class Assignment1 {
             if (randomValues.get(i).charAt(randomValues.get(i).length() - 1) == 'e')
                 endsWithECount++;
         {
-            System.out.println("There are " + endsWithECount + " value(-s) ending with an 'e'.");
+            System.out.println("There are " + endsWithECount + " value(s) ending with an 'e'.");
         }
     }
 
@@ -52,7 +52,7 @@ public class Assignment1 {
             if (randomValues.get(i).length() == 5)
                 valuesWithLengthOf5Count++;
         {
-            System.out.println("There are " + valuesWithLengthOf5Count + " value(-s) with the length of 5.");
+            System.out.println("There are " + valuesWithLengthOf5Count + " value(s) with the length of 5.");
         }
     }
 
@@ -62,7 +62,7 @@ public class Assignment1 {
             if (randomValues.get(i).contains("e"))
                 valuesCountainingEcount++;
         {
-            System.out.println("There are " + valuesCountainingEcount + " value(-s) containing letter 'e'");
+            System.out.println("There are " + valuesCountainingEcount + " value(s) containing letter 'e'");
         }
     }
 
@@ -90,7 +90,7 @@ public class Assignment1 {
             }
             arrForCountedWords[j] = charCounter2;
             if (charCounter2 != 0) {
-                System.out.println("There are " + arrForCountedWords[j] + " words with " + j + " characters.");
+                System.out.println("There are " + arrForCountedWords[j] + " word(s) with " + j + " characters.");
             }
         }
     }
