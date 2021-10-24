@@ -1,6 +1,8 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Assignment1 {
 
@@ -95,23 +97,18 @@ public class Assignment1 {
         }
     }
 
-    //sorting alphabetically
     public static void alphabeticalSorting(ArrayList<String> randomValues) {
-        String temp;
 
-        for (int times = 0; times < randomValues.size(); times++) { //times necessary to go through the list
-            for (int i = 0; i < randomValues.size() - 1 - times; i++) { //going through the list minus last element minus last looptime (or the number of elements already sorted)
-                if (randomValues.get(i).compareToIgnoreCase(randomValues.get(i + 1)) > 0) { //compare>0 if the first is larger; compare<0 if second is larger; compare=0 if equal
-                    temp = randomValues.get(i);
-                    randomValues.set(i, randomValues.get(i + 1)); //changing i-th element to i+1 element
-                    randomValues.set(i + 1, temp);
-                }
-            }
-        }
-        for (String word : randomValues) {
-            System.out.println(word);
-        }
-        System.out.println();
+        System.out.println("Unsorted ArrayList values: "
+                + randomValues);
+
+        // Sorting ArrayList in ascending Order
+        // using Collection.sort() method
+        Collections.sort(randomValues);
+
+        // Print the sorted values
+        System.out.println("Sorted ArrayList values in ascending order: "
+                + randomValues);
     }
 
 }
